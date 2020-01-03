@@ -13,6 +13,9 @@ var palyer : AVPlayer?
 
 class ViewController: UIViewController {
     //outlet collection，把所有圖存在 array
+   
+    @IBOutlet weak var dice2: UISlider!
+    @IBOutlet weak var dice: UIImageView!
     @IBOutlet var diceImageViews: [UIImageView]!
     let imageViews = ["1" , "2" , "3" , "4" , "5" , "6"]
     
@@ -41,5 +44,9 @@ class ViewController: UIViewController {
                palyer?.play()
     }
     
+    
+    @IBAction func dice2(_ sender: Any) {
+        dice.alpha = CGFloat(dice2.value / dice2.maximumValue)
+    }
 }
 

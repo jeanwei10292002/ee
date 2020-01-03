@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ljq-Jz-eFJ">
-                                <rect key="frame" x="97" y="350" width="47" height="60"/>
+                                <rect key="frame" x="128" y="350" width="47" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="dwT-Lj-936">
@@ -28,11 +28,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="M31-Dy-nb4">
-                                <rect key="frame" x="273" y="350" width="47" height="60"/>
+                                <rect key="frame" x="239" y="350" width="47" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="ekG-k1-f26">
-                                <rect key="frame" x="273" y="418" width="47" height="60"/>
+                                <rect key="frame" x="239" y="418" width="47" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="zLE-gY-ri4">
@@ -48,7 +48,18 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="la6-DG-tg3">
-                                <rect key="frame" x="97" y="418" width="47" height="60"/>
+                                <rect key="frame" x="129" y="418" width="47" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QZC-ku-Hxv">
+                                <rect key="frame" x="126" y="554" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="dice2:" destination="BYZ-38-t0r" eventType="valueChanged" id="eYC-Ee-VeH"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice" translatesAutoresizingMaskIntoConstraints="NO" id="EEf-Jt-eKL">
+                                <rect key="frame" x="-235" y="188" width="885" height="338"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -56,6 +67,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="dice" destination="EEf-Jt-eKL" id="sGL-DN-jhF"/>
+                        <outlet property="dice2" destination="QZC-ku-Hxv" id="3bj-k2-Qi0"/>
                         <outletCollection property="diceImageViews" destination="ljq-Jz-eFJ" collectionClass="NSMutableArray" id="sQS-iN-2Cf"/>
                         <outletCollection property="diceImageViews" destination="dwT-Lj-936" collectionClass="NSMutableArray" id="1R8-GA-zF2"/>
                         <outletCollection property="diceImageViews" destination="M31-Dy-nb4" collectionClass="NSMutableArray" id="4Ng-7a-Xyt"/>
@@ -77,6 +90,7 @@
         <image name="4" width="106" height="122"/>
         <image name="5" width="106" height="122"/>
         <image name="6" width="106" height="122"/>
+        <image name="dice" width="580" height="382"/>
         <image name="start" width="450" height="338"/>
     </resources>
 </document>
