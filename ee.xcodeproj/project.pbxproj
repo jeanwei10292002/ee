@@ -13,6 +13,8 @@
 		64B3718D23BC4FA400193BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B3718B23BC4FA400193BA0 /* Main.storyboard */; };
 		64B3718F23BC4FA600193BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B3718E23BC4FA600193BA0 /* Assets.xcassets */; };
 		64B3719223BC4FA600193BA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B3719023BC4FA600193BA0 /* LaunchScreen.storyboard */; };
+		64B3719A23BC64AE00193BA0 /* 賭神.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 64B3719923BC64AE00193BA0 /* 賭神.mp3 */; };
+		64B3719C23BC668100193BA0 /* coco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 64B3719B23BC668100193BA0 /* coco.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		64B3718E23BC4FA600193BA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64B3719123BC4FA600193BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64B3719323BC4FA600193BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B3719923BC64AE00193BA0 /* 賭神.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "賭神.mp3"; path = "../../賭神.mp3"; sourceTree = "<group>"; };
+		64B3719B23BC668100193BA0 /* coco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = coco.mp3; path = ../../coco.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				64B3718923BC4FA400193BA0 /* ViewController.swift */,
 				64B3718B23BC4FA400193BA0 /* Main.storyboard */,
 				64B3718E23BC4FA600193BA0 /* Assets.xcassets */,
+				64B3719923BC64AE00193BA0 /* 賭神.mp3 */,
+				64B3719B23BC668100193BA0 /* coco.mp3 */,
 				64B3719023BC4FA600193BA0 /* LaunchScreen.storyboard */,
 				64B3719323BC4FA600193BA0 /* Info.plist */,
 			);
@@ -126,8 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B3719223BC4FA600193BA0 /* LaunchScreen.storyboard in Resources */,
+				64B3719C23BC668100193BA0 /* coco.mp3 in Resources */,
 				64B3718F23BC4FA600193BA0 /* Assets.xcassets in Resources */,
 				64B3718D23BC4FA400193BA0 /* Main.storyboard in Resources */,
+				64B3719A23BC64AE00193BA0 /* 賭神.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
